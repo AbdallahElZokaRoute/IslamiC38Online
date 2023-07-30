@@ -22,7 +22,7 @@ class ProfileFragment : Fragment() {
     // When Binding Data and onClickListeners -> ()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        // Developer 1 => Developer Feature1 (Profile Fragment)
     }
 
 }
