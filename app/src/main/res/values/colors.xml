@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#6B36C8</color>
     <color name="color_black">#FF000000</color>
+    <color name="my_fancy_color">#FFFFFF</color>
 </resources>
