@@ -35,6 +35,11 @@
 
     </style>
 
+    <style name="SplashBG">
+        <item name="android:background">@drawable/splash</item>
+    </style>
+
+
     <style name="backIconStyle">
         <item name="android:tint">@null</item>
     </style>

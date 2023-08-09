@@ -9,7 +9,8 @@ import com.route.isalmic38online.R
 import com.route.isalmic38online.islamiProject.adapters.VersesAdapter
 
 class SuraDetailsActivity : AppCompatActivity() {
-
+    // 1- Clone
+    // 2- Git -> Contribute for Specific Repository
     // 1- Sebha
     //      :-
     //      1- Fork Repository (Repo on Our Account)
