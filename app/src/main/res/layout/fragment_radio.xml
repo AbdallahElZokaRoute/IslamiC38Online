@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/text_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اسلامي"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <ImageView
+        android:id="@+id/radio_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/radio_image"
+        android:layout_marginTop="99dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_toolbar"
+        />
+    <TextView
+        android:id="@+id/title_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إذاعة القرآن الكريم"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/elmessiri_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/skip_previous"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_skip_previous_lt"
+        style="@style/radio_icon_bg"
+        android:layout_marginTop="66dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_radio"
+        app:layout_constraintEnd_toStartOf="@id/play"
+
+
+        />
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_play"
+        style="@style/radio_icon_bg"
+        app:layout_constraintStart_toEndOf="@id/skip_previous"
+        app:layout_constraintTop_toTopOf="@id/skip_previous"
+        app:layout_constraintEnd_toStartOf="@id/skip_next"
+        />
+    <ImageView
+        android:id="@+id/skip_next"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        style="@style/radio_icon_bg"
+        android:src="@drawable/ic_skip_next_rt"
+        app:layout_constraintStart_toEndOf="@id/play"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

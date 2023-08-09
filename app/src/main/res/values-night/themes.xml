@@ -33,6 +33,21 @@
     <style name="backIconStyle">
         <item name="android:tint">@color/colorWhite2</item>
     </style>
+    <style name="khatem_eltasbeh_color">
+        <item name="android:src">@drawable/khatem_eltasbeh_darkmood</item>
+    </style>
+    <style name="btn_counter_bg">
+        <item name="android:background">@drawable/bg_counter</item>
+        <item name="android:backgroundTint">@color/darkBlue</item>
+        <item name="android:textColor">@color/colorYellow</item>
+    </style>
+    <style name="btn_thker_bg">
+        <item name="android:backgroundTint">@color/colorYellow</item>
+    </style>
+    <style name="radio_icon_bg">
+        <item name="android:tint">@color/colorYellow</item>
+    </style>
+
 
     <style name="IsalmiBottomNavigationStyle">
         <item name="android:background">@color/darkBlue</item>
