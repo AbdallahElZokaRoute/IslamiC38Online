@@ -3,6 +3,11 @@
     <style name="Base.Theme.IsalmiC38Online" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:colorPrimaryDark">@color/btn_color_gold</item>
+    </style>
+    <style name="IslamiBottomNavigationStyle">
+        <item name="android:background">@color/btn_color_gold</item>
+        <item name="itemIconSize">36dp</item>
     </style>
 
     <style name="Theme.IsalmiC38Online" parent="Base.Theme.IsalmiC38Online" />
