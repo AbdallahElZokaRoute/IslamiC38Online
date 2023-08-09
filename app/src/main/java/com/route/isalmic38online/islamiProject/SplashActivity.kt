@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
+import android.widget.Toast
 import com.route.isalmic38online.R
 
 class SplashActivity : AppCompatActivity() {
@@ -15,7 +17,19 @@ class SplashActivity : AppCompatActivity() {
         // Communicate With Main Thread ->  2 Seconds ->
         //2.5 Secs
         // anonymous function -> Kotlin
-        Handler().postDelayed({
+//        this@SplashActivity
+//        Context-> Parent
+//        Activity -> Child
+//
+//
+//        Toast.makeText(this@SplashActivity, "Hello World", Toast.LENGTH_SHORT).show()
+//        Class Environment Data
+//        applicationContext.context
+//
+//        applicationContext
+
+
+        Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this@SplashActivity, HomeActivity::class.java)
             startActivity(intent)
             finish()

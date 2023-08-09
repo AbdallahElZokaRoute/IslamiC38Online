@@ -28,9 +28,9 @@
 
     <TextView
         android:id="@+id/sura_name"
+        style="@style/textViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/guile_line"
         app:layout_constraintTop_toTopOf="parent"

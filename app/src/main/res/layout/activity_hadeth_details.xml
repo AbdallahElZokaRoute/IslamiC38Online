@@ -5,7 +5,7 @@
     style="@style/home_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".islamiProject.SuraDetailsActivity">
+    tools:context=".islamiProject.HadethDetailsActivity">
 
     <ImageView
         android:id="@+id/back_icon"
@@ -17,30 +17,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/sura_name_text"
-        style="@style/textViewStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/back_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/back_icon"
-        tools:text="الفاتحة" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/verses_recycler_view"
+        android:id="@+id/hadeth_recycler_view"
         style="@style/QuranRecyclerViewBG"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sura_name_text"
+        app:layout_constraintTop_toBottomOf="@id/back_icon"
         app:layout_constraintWidth_percent="0.8"
         tools:listitem="@layout/item_verse"
 

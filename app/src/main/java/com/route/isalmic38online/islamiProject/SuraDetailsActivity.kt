@@ -2,16 +2,29 @@ package com.route.isalmic38online.islamiProject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.route.isalmic38online.R
 import com.route.isalmic38online.islamiProject.adapters.VersesAdapter
 
 class SuraDetailsActivity : AppCompatActivity() {
+
+    // 1- Sebha
+    //      :-
+    //      1- Fork Repository (Repo on Our Account)
+    //      2- Clone (Local Device)
+    //      3- Take a new branch from "feature/splash_home_screens"
+    //      4- Develop Feature Sebha
+    //      5- Commit and push the code
+    //  Github
+    //      6- Create a new Pull Request from your branch to my Repository Branch "AbdallahElZokaRoute @feature/splash_home_screens
+    //
     var suraName: String? = null
     var suraPosition: Int? = null
     lateinit var suraNameText: TextView
     lateinit var adapter: VersesAdapter
+    lateinit var backIcon: ImageView
     lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +37,10 @@ class SuraDetailsActivity : AppCompatActivity() {
         adapter = VersesAdapter(null)
         recyclerView.adapter = adapter
         readFileContents()
+        backIcon = findViewById(R.id.back_icon)
+        backIcon.setOnClickListener {
+            finish()
+        }
 
     }
 
