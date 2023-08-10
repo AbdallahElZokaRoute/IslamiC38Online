@@ -43,6 +43,17 @@
     <style name="backIconStyle">
         <item name="android:tint">@null</item>
     </style>
+    <style name="khatem_eltasbeh_color">
+        <item name="android:src">@drawable/khatem_eltasbeh</item>
+    </style>
+    <style name="btn_counter_bg">
+        <item name="android:background">@drawable/bg_counter</item>
+        <item name="android:backgroundTint">@color/colorGold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="btn_thker_bg">
+        <item name="android:backgroundTint">@color/colorGold</item>
+    </style>
 
     <style name="Theme.IsalmiC38Online" parent="Base.Theme.IsalmiC38Online" />
 </resources>
