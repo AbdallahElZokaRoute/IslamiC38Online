@@ -3,4 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#6B36C8</color>
+    <color name="color_black">#FF000000</color>
+    <color name="my_fancy_color">#FFFFFF</color>
+    <!--  Copy Remote Repository on You Own Device -->
+
+
+    <color name="colorGold">#B7935F</color>
+    <color name="colorWhite2">#F8F8F8</color>
+    <color name="colorBlack2">#242424</color>
+    <color name="darkBlue">#141A2E</color>
+    <color name="colorYellow">#FACC1D</color>
 </resources>

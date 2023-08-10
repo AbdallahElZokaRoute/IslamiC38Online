@@ -3,5 +3,44 @@
     <style name="Base.Theme.IsalmiC38Online" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">@color/darkBlue</item>
+
+    </style>
+
+    <style name="SplashBG">
+        <item name="android:background">@drawable/splash_dark</item>
+    </style>
+
+    <style name="home_background">
+        <item name="android:background">@drawable/bg_dark</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:textColor">@color/colorWhite2</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="QuranTextViewStyle">
+        <item name="android:textColor">@color/colorYellow</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="QuranRecyclerViewBG">
+        <item name="android:background">@null</item>
+
+    </style>
+
+    <style name="backIconStyle">
+        <item name="android:tint">@color/colorWhite2</item>
+    </style>
+
+    <style name="IsalmiBottomNavigationStyle">
+        <item name="android:background">@color/darkBlue</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="itemBackground">@null</item>
+        <item name="itemIconSize">42dp</item>
+        <item name="itemIconTint">@color/bottom_navigation_color_selector_dark</item>
+        <item name="itemRippleColor">@null</item>
+        <item name="itemTextColor">@color/bottom_navigation_color_selector_dark</item>
     </style>
 </resources>

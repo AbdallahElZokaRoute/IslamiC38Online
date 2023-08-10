@@ -3,6 +3,45 @@
     <style name="Base.Theme.IsalmiC38Online" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/colorGold</item>
+    </style>
+
+    <style name="IsalmiBottomNavigationStyle">
+        <item name="android:background">@color/colorGold</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="itemBackground">@null</item>
+        <item name="itemIconSize">42dp</item>
+        <item name="itemIconTint">@color/bottom_navigation_color_selector</item>
+        <item name="itemRippleColor">@null</item>
+        <item name="itemTextColor">@color/bottom_navigation_color_selector</item>
+    </style>
+
+    <style name="home_background">
+        <item name="android:background">@drawable/bg</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:textColor">@color/colorBlack2</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="QuranTextViewStyle">
+        <item name="android:textColor">@color/colorBlack2</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="QuranRecyclerViewBG">
+        <item name="android:background">@drawable/sura_details_bg</item>
+
+    </style>
+
+    <style name="SplashBG">
+        <item name="android:background">@drawable/splash</item>
+    </style>
+
+
+    <style name="backIconStyle">
+        <item name="android:tint">@null</item>
     </style>
 
     <style name="Theme.IsalmiC38Online" parent="Base.Theme.IsalmiC38Online" />

@@ -22,6 +22,6 @@ class SettingsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        // Developer 2 => Developer Feature 2 (Settings Fragment)
     }
 }
