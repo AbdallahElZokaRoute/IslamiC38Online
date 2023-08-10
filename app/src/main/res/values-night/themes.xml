@@ -44,6 +44,9 @@
     <style name="btn_thker_bg">
         <item name="android:backgroundTint">@color/colorYellow</item>
     </style>
+    <style name="radio_icon_bg">
+        <item name="android:tint">@color/colorYellow</item>
+    </style>
 
 
     <style name="IsalmiBottomNavigationStyle">

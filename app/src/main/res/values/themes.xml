@@ -54,6 +54,9 @@
     <style name="btn_thker_bg">
         <item name="android:backgroundTint">@color/colorGold</item>
     </style>
+    <style name="radio_icon_bg">
+        <item name="android:tint">@color/colorGold</item>
+    </style>
 
     <style name="Theme.IsalmiC38Online" parent="Base.Theme.IsalmiC38Online" />
 </resources>
