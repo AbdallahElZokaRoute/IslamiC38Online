@@ -5,19 +5,23 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import com.route.isalmic38online.R
+import com.route.isalmic38online.databinding.FragmentSettingsBinding
 
 // Deprecated -> Will be removed in future Releases .
 
 
 class SettingsFragment : Fragment() {
-
+    lateinit var settingsBinding: FragmentSettingsBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        settingsBinding = FragmentSettingsBinding.inflate(layoutInflater)
+        val view = settingsBinding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -25,3 +29,4 @@ class SettingsFragment : Fragment() {
 
     }
 }
+

@@ -6,23 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.route.isalmic38online.R
-import com.route.isalmic38online.databinding.FragmentProfileBinding
+import com.route.isalmic38online.databinding.FragmentSebhaBinding
 
+class SebhaFragment : Fragment() {
+    lateinit var sebhaBinding: FragmentSebhaBinding
 
-class ProfileFragment : Fragment() {
-    lateinit var profileBinding: FragmentProfileBinding
-    // When Creating a new view
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        profileBinding = FragmentProfileBinding.inflate(layoutInflater)
-        return profileBinding.root
+       sebhaBinding = FragmentSebhaBinding.inflate(layoutInflater)
+        return sebhaBinding.root
     }
-    // When Binding Data and onClickListeners -> ()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 
 }
