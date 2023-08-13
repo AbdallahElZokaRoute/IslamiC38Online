@@ -31,7 +31,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/profile_text_view"
         app:layout_constraintTop_toTopOf="parent" />
-
+    <!--
+        ViewGroup->
+     -->
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
