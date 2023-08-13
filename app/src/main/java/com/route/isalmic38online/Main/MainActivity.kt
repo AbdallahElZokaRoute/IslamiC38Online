@@ -1,11 +1,10 @@
-package com.route.isalmic38online
+package com.route.isalmic38online.Main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputBinding
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
+import com.route.isalmic38online.R
 import com.route.isalmic38online.databinding.ActivityMainBinding
 import com.route.isalmic38online.fragments.ProfileFragment
 import com.route.isalmic38online.fragments.SebhaFragment
