@@ -2,5 +2,11 @@
     <string name="app_name">IsalmiC38Online</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_text">اسلامي</string>
+    <string name="title_text">إسلامي</string>
+    <string name="quran_nav_title">القرآن</string>
+    <string name="sebha_nav_title">التسبيح</string>
+    <string name="hadeth_nav_title">الأحاديث</string>
+    <string name="radio_nav_title">الراديو</string>
+    <string name="surah_name">اسم السورة</string>
+    <string name="count">عدد الايات</string>
 </resources>

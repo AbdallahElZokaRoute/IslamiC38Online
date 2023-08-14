@@ -6,23 +6,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.route.isalmic38online.R
-import com.route.isalmic38online.databinding.FragmentProfileBinding
+import com.route.isalmic38online.databinding.FragmentRadioBinding
+import com.route.isalmic38online.databinding.FragmentSebhaBinding
 
+class RadioFragment : Fragment() {
+    lateinit var radrioFragment: FragmentRadioBinding
 
-class ProfileFragment : Fragment() {
-    lateinit var profileBinding: FragmentProfileBinding
-    // When Creating a new view
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        profileBinding = FragmentProfileBinding.inflate(layoutInflater)
-        return profileBinding.root
+        radrioFragment = FragmentRadioBinding.inflate(inflater,container,false)
+        return radrioFragment.root
     }
-    // When Binding Data and onClickListeners -> ()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
     }
 
 }

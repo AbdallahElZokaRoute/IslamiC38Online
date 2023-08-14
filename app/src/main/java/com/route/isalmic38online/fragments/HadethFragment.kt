@@ -5,22 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
-import com.route.isalmic38online.R
-import com.route.isalmic38online.databinding.FragmentSettingsBinding
+import com.route.isalmic38online.databinding.FragmentHadethBinding
 
 // Deprecated -> Will be removed in future Releases .
 
 
-class SettingsFragment : Fragment() {
-    lateinit var settingsBinding: FragmentSettingsBinding
+class HadethFragment : Fragment() {
+    lateinit var hadethFragment: FragmentHadethBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        settingsBinding = FragmentSettingsBinding.inflate(layoutInflater)
-        val view = settingsBinding.root
+        hadethFragment = FragmentHadethBinding.inflate(inflater,container,false)
+        val view = hadethFragment.root
         return view
     }
 

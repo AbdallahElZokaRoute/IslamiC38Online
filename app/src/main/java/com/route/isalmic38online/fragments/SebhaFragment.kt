@@ -15,7 +15,7 @@ class SebhaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       sebhaBinding = FragmentSebhaBinding.inflate(layoutInflater)
+       sebhaBinding = FragmentSebhaBinding.inflate(inflater,container,false)
         return sebhaBinding.root
     }
 

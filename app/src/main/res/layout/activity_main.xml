@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg3"
     tools:context=".Main.MainActivity">
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/transperant"
-        android:elevation="0dp">
+        app:elevation="0dp"
+        >
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -17,13 +19,20 @@
                 android:id="@+id/title_app"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:text="@string/title_text"
+                android:layout_gravity="center"
                 />
 
         </androidx.appcompat.widget.Toolbar>
 
 
     </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:id="@+id/content"
+        layout="@layout/content_main"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
