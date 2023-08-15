@@ -9,4 +9,5 @@
     <string name="radio_nav_title">الراديو</string>
     <string name="surah_name">اسم السورة</string>
     <string name="count">عدد الايات</string>
+    <string name="count_sebha">عدد التسبيحات</string>
 </resources>

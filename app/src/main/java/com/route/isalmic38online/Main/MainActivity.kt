@@ -14,10 +14,6 @@ import com.route.isalmic38online.fragments.RadioFragment
 import com.route.isalmic38online.fragments.SebhaFragment
 
 class MainActivity : AppCompatActivity() {
-    lateinit var radioFragment: RadioFragment
-    lateinit var profileTextView: TextView
-    lateinit var settingsTextView: TextView
-    lateinit var sebhaTextView: TextView
     lateinit var viewBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

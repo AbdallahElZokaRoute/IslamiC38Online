@@ -20,6 +20,14 @@ class QuranRecyclerAdapter(val items: Array<Array<String>>) : RecyclerView.Adapt
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.viewBinding.surahTitle.text = items[position][0]
         holder.viewBinding.surahCount.text = items[position][1]
+        holder.itemView.setOnClickListener { it ->
+            onItemClickListener?.onClick(holder.viewBinding,position)
+
+        }
+    }
+    var onItemClickListener: OnItemClickListener? = null
+    interface OnItemClickListener{
+        fun onClick(item: ItemSurahBinding, Position: Int)
     }
     override fun getItemCount(): Int = items.size
 }
