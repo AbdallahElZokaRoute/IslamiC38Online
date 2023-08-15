@@ -9,12 +9,23 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
+        android:id="@+id/sebha_header"
+        android:layout_width="73dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginStart="49dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/head_of_sebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
         android:id="@+id/sebha_icon"
         android:layout_width="232dp"
         android:layout_height="0dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="180dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/sebha_icon"
+        android:src="@drawable/body_of_sebha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

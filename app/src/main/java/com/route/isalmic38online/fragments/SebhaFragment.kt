@@ -22,41 +22,50 @@ class SebhaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         sebhaBinding.tasbeehBtn.setOnClickListener {
-            var counter = sebhaBinding.counter.text.toString().toInt()
-            // from subhan allah to elhamdullah
-            if (sebhaBinding.tasbeehBtn.text == getString(R.string.subhanallah)) {
+            onSebhaClick()
+        }
 
-                if (counter.toString().toInt() < 33) {
-                    counter++
-                    sebhaBinding.counter.text = counter.toString()
-                } else {
-                    sebhaBinding.tasbeehBtn.text = getString(R.string.elhamdullah)
-                    sebhaBinding.counter.text = "0"
-                }
+    }
+    fun onSebhaClick(){
+        var counter = sebhaBinding.counter.text.toString().toInt()
+        // from subhan allah to elhamdullah
+        if (sebhaBinding.tasbeehBtn.text == getString(R.string.subhanallah)) {
+
+            if (counter.toString().toInt() < 33) {
+                counter++
+                sebhaBinding.counter.text = counter.toString()
+                sebhaBinding.sebhaIcon.rotation += 5
+            } else {
+                sebhaBinding.tasbeehBtn.text = getString(R.string.elhamdullah)
+                sebhaBinding.counter.text = "0"
+                sebhaBinding.sebhaIcon.rotation += 5
             }
-            // from elhamdullah to allahuakbar
-            if (sebhaBinding.tasbeehBtn.text == getString(R.string.elhamdullah)) {
+        }
+        // from elhamdullah to allahuakbar
+        else if (sebhaBinding.tasbeehBtn.text == getString(R.string.elhamdullah)) {
 
-                if (counter.toString().toInt() < 33) {
-                    counter++
-                    sebhaBinding.counter.text = counter.toString()
-                } else {
-                    sebhaBinding.tasbeehBtn.text = getString(R.string.allahuakbar)
-                    sebhaBinding.counter.text = "0"
-                }
+            if (counter.toString().toInt() < 33) {
+                counter++
+                sebhaBinding.counter.text = counter.toString()
+                sebhaBinding.sebhaIcon.rotation += 5
+            } else {
+                sebhaBinding.tasbeehBtn.text = getString(R.string.allahuakbar)
+                sebhaBinding.counter.text = "0"
+                sebhaBinding.sebhaIcon.rotation += 5
             }
-            // from allhuakbar to subhan allah
-            if (sebhaBinding.tasbeehBtn.text == getString(R.string.allahuakbar)) {
+        }
+        // from allhuakbar to subhan allah
+        else if (sebhaBinding.tasbeehBtn.text == getString(R.string.allahuakbar)) {
 
-                if (counter.toString().toInt() < 33) {
-                    counter++
-                    sebhaBinding.counter.text = counter.toString()
-                } else {
-                    sebhaBinding.tasbeehBtn.text = getString(R.string.subhanallah)
-                    sebhaBinding.counter.text = "0"
-                }
+            if (counter.toString().toInt() < 33) {
+                counter++
+                sebhaBinding.counter.text = counter.toString()
+                sebhaBinding.sebhaIcon.rotation += 5
+            } else {
+                sebhaBinding.tasbeehBtn.text = getString(R.string.subhanallah)
+                sebhaBinding.counter.text = "0"
+                sebhaBinding.sebhaIcon.rotation += 5
             }
-
         }
     }
 
