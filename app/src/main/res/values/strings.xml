@@ -10,4 +10,9 @@
     <string name="surah_name">اسم السورة</string>
     <string name="count">عدد الايات</string>
     <string name="count_sebha">عدد التسبيحات</string>
+    <string name="elhamdullah">الحمد لله</string>
+    <string name="subhanallah">سبحان الله</string>
+    <string name="allahuakbar">الله اكبر</string>
+    <string name="channel_name">إذاعة القرآن الكريم</string>
+
 </resources>

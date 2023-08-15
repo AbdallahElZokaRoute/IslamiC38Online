@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:background="@drawable/bg3"
     android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/radio_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/radio_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/quranItemList"
+        android:layout_marginTop="55dp"
+        android:text="@string/channel_name"
+        app:layout_constraintTop_toBottomOf="@id/radio_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/previous_btn"
+        android:layout_width="13.5dp"
+        android:layout_height="23.14dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/previous_icon"
+        android:layout_marginStart="96.8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/play_btn"
+        app:layout_constraintTop_toBottomOf="@id/channel_name"/>
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="31.5dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/play_icon"
+        app:layout_constraintStart_toEndOf="@id/previous_btn"
+        app:layout_constraintEnd_toStartOf="@id/next_btn"
+        app:layout_constraintTop_toBottomOf="@id/channel_name"/>
+    <ImageView
+        android:id="@+id/next_btn"
+        android:layout_width="13.5dp"
+        android:layout_height="23.14dp"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/next_icon"
+        android:layout_marginEnd="96.8dp"
+        app:layout_constraintBottom_toBottomOf="@id/play_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/channel_name"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

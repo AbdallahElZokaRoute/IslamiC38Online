@@ -34,7 +34,7 @@
         android:id="@+id/counter"
         android:layout_width="69dp"
         android:layout_height="81dp"
-        android:text="15"
+        android:text="0"
         android:textAlignment="center"
         android:gravity="center"
         android:textSize="25sp"
@@ -45,10 +45,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/count_sebha_txt"/>
     <Button
-        android:id="@+id/tasbeeh_btm"
+        android:id="@+id/tasbeeh_btn"
         android:layout_width="137dp"
         android:layout_height="51dp"
-        android:text="سبحان الله "
+        android:text="@string/subhanallah"
         android:textStyle="bold"
         android:textAlignment="center"
         android:gravity="center"

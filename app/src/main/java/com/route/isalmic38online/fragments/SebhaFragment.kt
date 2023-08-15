@@ -21,6 +21,43 @@ class SebhaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        sebhaBinding.tasbeehBtn.setOnClickListener {
+            var counter = sebhaBinding.counter.text.toString().toInt()
+            // from subhan allah to elhamdullah
+            if (sebhaBinding.tasbeehBtn.text == getString(R.string.subhanallah)) {
+
+                if (counter.toString().toInt() < 33) {
+                    counter++
+                    sebhaBinding.counter.text = counter.toString()
+                } else {
+                    sebhaBinding.tasbeehBtn.text = getString(R.string.elhamdullah)
+                    sebhaBinding.counter.text = "0"
+                }
+            }
+            // from elhamdullah to allahuakbar
+            if (sebhaBinding.tasbeehBtn.text == getString(R.string.elhamdullah)) {
+
+                if (counter.toString().toInt() < 33) {
+                    counter++
+                    sebhaBinding.counter.text = counter.toString()
+                } else {
+                    sebhaBinding.tasbeehBtn.text = getString(R.string.allahuakbar)
+                    sebhaBinding.counter.text = "0"
+                }
+            }
+            // from allhuakbar to subhan allah
+            if (sebhaBinding.tasbeehBtn.text == getString(R.string.allahuakbar)) {
+
+                if (counter.toString().toInt() < 33) {
+                    counter++
+                    sebhaBinding.counter.text = counter.toString()
+                } else {
+                    sebhaBinding.tasbeehBtn.text = getString(R.string.subhanallah)
+                    sebhaBinding.counter.text = "0"
+                }
+            }
+
+        }
     }
 
 }
