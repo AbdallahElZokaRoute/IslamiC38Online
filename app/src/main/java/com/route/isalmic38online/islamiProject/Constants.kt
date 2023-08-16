@@ -6,4 +6,8 @@ object Constants {
 
     val HADETH_NAME_KEY = "hadeth_title"
     val HADETH_CONTENT_KEY = "hadeth_CONTENT"
+    val sobhan_allah="سبحان الله"
+    val elhmd_llaah="الحمدلله"
+    val la_Elah_Ela_Allah="لا اله الا الله"
+    val Alaah_Akbar="الله اكبر"
 }
