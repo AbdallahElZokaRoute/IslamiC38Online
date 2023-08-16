@@ -15,7 +15,6 @@
         android:layout_width="wrap_content"
         tools:text="Surah"
         style="@style/textViewStyle"
-        android:textSize="24sp"
         android:layout_height="wrap_content" />
 
     <androidx.constraintlayout.widget.Guideline
