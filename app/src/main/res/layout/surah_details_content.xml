@@ -10,10 +10,10 @@
 
     <TextView
         android:id="@+id/main_text"
+        style="@style/textViewStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="1"
-        style="@style/textViewStyle"
         android:text="@string/bsmla"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -24,9 +24,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/verses_rv"
+        style="@style/QuranRecyclerViewBG"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        style="@style/QuranRecyclerViewBG"
         android:orientation="vertical"
         android:padding="16dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

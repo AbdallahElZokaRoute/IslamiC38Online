@@ -30,17 +30,27 @@
 
     </style>
 
-    <style name="QuranTextViewStyle">
+    <style name="QuranSurahTextStyle">
         <item name="android:textColor">@color/colorGold</item>
         <item name="android:textSize">24sp</item>
         <item name="android:fontFamily">@font/amiri</item>
     </style>
 
-    <style name="QuranRecyclerViewBG">
-        <item name="android:background">@drawable/surah_details_dark_bg</item>
+    <style name="QuranHadithTextStyle">
+        <item name="android:textColor">@color/colorGold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/amiri</item>
 
     </style>
 
+    <style name="QuranRecyclerViewBG">
+        <item name="android:background">@drawable/surah_details_dark_bg</item>
+    </style>
+
+    <style name="QuranCardViewBG">
+        <item name="cardBackgroundColor">@color/colorDarkPrimary</item>
+        <item name="android:fontFamily">@font/amiri</item>
+    </style>
     <style name="backIconStyle">
         <item name="android:tint">@color/white</item>
     </style>
