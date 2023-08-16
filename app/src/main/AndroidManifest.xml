@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".MyCustomApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -10,26 +11,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.IsalmiC38Online"
-        tools:targetApi="31">
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Base.Theme.QuranIslami"
+        tools:targetApi="tiramisu">
         <activity
-            android:name=".ui.surah_details_screen.SurahDetailsScreen"
-            android:parentActivityName=".ui.home.HomeActivity"
+            android:name="com.route.isalmic38online.ui.hadith_details_screen.HadithDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.route.isalmic38online.ui.surah_details_screen.SurahDetailsScreen"
+            android:exported="true"
+            android:parentActivityName="com.route.isalmic38online.ui.home.HomeActivity" />
+        <activity
+            android:name="com.route.isalmic38online.ui.home.HomeActivity"
             android:exported="true" />
-        <activity
-            android:name=".ui.home.HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.splash_screen.SplashScreen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.route.isalmic38online.ui.splash_screen.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

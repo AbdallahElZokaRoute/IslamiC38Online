@@ -1,8 +1,85 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.IsalmiC38Online" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.QuranIslami" parent="Theme.Material3.DayNight.NoActionBar">
        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/amiri</item>
     </style>
 
-    <style name="Theme.IsalmiC38Online" parent="Base.Theme.IsalmiC38Online" />
+    <style name="IsalmiBottomNavigationStyle">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="itemBackground">@null</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="itemIconSize">48dp</item>
+        <item name="itemIconTint">@color/home_nav_bar_color</item>
+        <item name="itemRippleColor">@null</item>
+        <item name="itemTextColor">@color/home_nav_bar_color</item>
+    </style>
+
+    <style name="textViewStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/amiri</item>
+    </style>
+
+
+
+    <style name="home_background">
+        <item name="android:background">@drawable/default_bg</item>
+    </style>
+
+
+    <style name="QuranTextViewStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/amiri</item>
+
+    </style>
+
+    <style name="QuranRecyclerViewBG">
+        <item name="android:background">@drawable/surah_details_bg</item>
+
+    </style>
+
+    <style name="SplashBG">
+        <item name="android:background">@drawable/splash_bg</item>
+    </style>
+
+
+    <style name="backIconStyle">
+        <item name="android:tint">@color/black</item>
+    </style>
+    
+    <style name="tasbeh_image">
+     <item name="android:src">@drawable/tasbeh</item>
+    </style>
+
+    <style name="tasbeh_btn_color">
+        <item name="backgroundTint">@null</item>
+        <item name="backgroundColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="subhan_color">
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+    <style name="tasbeh_counter_color">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="tasbeh_counter_card_color">
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="tasbeh_subhan_card_color">
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+
+    </style>
+
+
+    <style name="Theme.IsalmiC38Online" parent="Base.Theme.QuranIslami" />
 </resources>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IsalmiC38Online</string>
+    <string name="app_name">QuranIslami</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="quran">Quran</string>
@@ -8,4 +8,6 @@
     <string name="radio">Radio</string>
     <string name="islami">Islami</string>
     <string name="bsmla">بسم الله الرحمن الرحيم</string>
+    <string name="light_mode">Light mode</string>
+    <string name="islami_title">اسلامي</string>
 </resources>

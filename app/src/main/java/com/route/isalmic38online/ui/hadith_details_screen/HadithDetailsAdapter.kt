@@ -1,4 +1,4 @@
-package com.route.isalmic38online.ui.surah_details_screen
+package com.route.isalmic38online.ui.hadith_details_screen
 
 import android.os.Build
 import android.text.Html
@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.route.isalmic38online.databinding.ItemVerseBinding
 
-class SurahDetailsAdapter(var versesList: List<String>) : Adapter<SurahDetailsAdapter.ViewHolder>() {
+class HadithDetailsAdapter(var hadithList: Array<String>) : Adapter<HadithDetailsAdapter.ViewHolder>() {
 
     inner class ViewHolder(val binding : ItemVerseBinding) : RecyclerView.ViewHolder(binding.root)
 
@@ -20,12 +20,12 @@ class SurahDetailsAdapter(var versesList: List<String>) : Adapter<SurahDetailsAd
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.binding.verseTv.text =Html.fromHtml("<h3> ${versesList?.get(position)?:""} <h3>",Html.FROM_HTML_MODE_COMPACT)
+        holder.binding.verseTv.text =Html.fromHtml("<h3> ${hadithList?.get(position)?:""} <h3>",Html.FROM_HTML_MODE_COMPACT)
 
     }
 
 
 
-    override fun getItemCount(): Int = versesList?.size ?: 0
+    override fun getItemCount(): Int = hadithList?.size ?: 0
 
 }

@@ -9,21 +9,21 @@
     tools:background="@drawable/default_bg">
 
     <TextView
-        android:id="@+id/main_text"
+        android:id="@+id/hadith_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxLines="1"
         style="@style/textViewStyle"
-        android:text="@string/bsmla"
+        android:maxLines="1"
+        tools:text="Hadith 1"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/verses_rv"
+        app:layout_constraintBottom_toTopOf="@id/hadith_rv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/verses_rv"
+        android:id="@+id/hadith_rv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         style="@style/QuranRecyclerViewBG"
@@ -33,6 +33,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_text" />
+        app:layout_constraintTop_toBottomOf="@id/hadith_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
