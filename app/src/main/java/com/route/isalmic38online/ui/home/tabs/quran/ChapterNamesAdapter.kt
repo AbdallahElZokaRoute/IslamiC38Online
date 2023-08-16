@@ -19,7 +19,10 @@ class ChapterNamesAdapter(val surahs : List<SurahNameData>) : Adapter<ChapterNam
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
        holder.binding.surahName.text = surahs[position].name
         holder.binding.surahNumber.text = surahs[position].position.toString()
-        holder.binding.root.setOnClickListener { onSurahClickListener?.onClick(surahs[position]) }
+
+        if(onSurahClickListener != null){
+            holder.binding.root.setOnClickListener { onSurahClickListener?.onClick(surahs[position]) }
+        }
     }
 
     override fun getItemCount(): Int = surahs.size

@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.tabs.hadith.HadithFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/default_bg"
+    android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/hadith_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/hadith_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="@id/hadith_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/hadith_text" />
+
+    <TextView
+        style="@style/textViewStyle"
+        android:id="@+id/hadith_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="الأحاديث"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hadith_image" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hadeth_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hadith_text" />
 </androidx.constraintlayout.widget.ConstraintLayout>
