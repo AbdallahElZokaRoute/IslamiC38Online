@@ -59,9 +59,12 @@
     <style name="backIconStyle">
         <item name="android:tint">@color/black</item>
     </style>
-    
-    <style name="tasbeh_image">
-     <item name="android:src">@drawable/tasbeh</item>
+
+    <style name="tasbeh_head">
+        <item name="android:src">@drawable/head_sebha_logo</item>
+    </style>
+    <style name="tasbeh_body">
+     <item name="android:src">@drawable/body_sebha_logo</item>
     </style>
 
     <style name="tasbeh_btn_color">
