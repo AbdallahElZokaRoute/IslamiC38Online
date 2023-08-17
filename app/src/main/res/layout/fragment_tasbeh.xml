@@ -113,10 +113,11 @@
                 android:id="@+id/tasbeh_subhan_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingHorizontal="24dp"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 style="@style/tasbeh_btn_color"
-                android:text="سبحان الله" />
+                tools:text="سبحان الله" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
